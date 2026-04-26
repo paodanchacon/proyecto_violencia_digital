@@ -15,3 +15,9 @@
     *   Se añadieron visualizaciones intermedias (histogramas de los índices y gráficos de barras para las dimensiones) dentro del notebook.
     *   Configuración para exportar el DataFrame final resultante a la nueva carpeta `output/`.
     *   **Corrección de Bug (Dim_Rango_Edad):** Se ajustó la función de categorización de edad usando expresiones regulares (`re.findall`) debido a que las respuestas originales contenían texto como "11años" o "13 o 14 años", lo que causaba un error en la conversión a número entero y clasificaba casi todo como "No Reportado".
+
+*   **Procesamiento de Dimensiones de Docentes:**
+    *   Creación del notebook `Analisis_Docentes.ipynb` en la carpeta `notebooks/`.
+    *   Implementación de algoritmos de procesamiento para evaluar el **Índice de Conocimiento** (Preguntas 1, 2, 3, 4, 5, 6, 8, 12, 13, 14, 15) y el **Índice de Capacidades de Respuesta** (Preguntas 16, 21, 22) de los educadores, aplicando mapeos categóricos y binarios según la naturaleza de cada pregunta.
+    *   Limpieza y normalización de dimensiones clave: `Municipio`, `Unidad Educativa`, `Nivel`, `Experiencia`, `Materia`, `Género`, `Indígena`, `Idioma`.
+    *   Configuración de exportación del DataFrame transformado a `output/df_docentes_final.xlsx`.
