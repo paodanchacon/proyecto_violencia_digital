@@ -21,3 +21,10 @@
     *   Implementación de algoritmos de procesamiento para evaluar el **Índice de Conocimiento** (Preguntas 1, 2, 3, 4, 5, 6, 8, 12, 13, 14, 15) y el **Índice de Capacidades de Respuesta** (Preguntas 16, 21, 22) de los educadores, aplicando mapeos categóricos y binarios según la naturaleza de cada pregunta.
     *   Limpieza y normalización de dimensiones clave: `Municipio`, `Unidad Educativa`, `Nivel`, `Experiencia`, `Materia`, `Género`, `Indígena`, `Idioma`.
     *   Configuración de exportación del DataFrame transformado a `output/df_docentes_final.xlsx`.
+
+*   **Procesamiento de Dimensiones de Padres/Cuidadores:**
+    *   Creación del notebook `Analisis_Padres.ipynb` en la carpeta `notebooks/`.
+    *   Implementación de algoritmos para evaluar el **Índice de Conocimiento sobre Seguridad Digital** (Preguntas 2, 3, 4, 5, 6) y el **Índice de Acompañamiento Familiar** (Preguntas 16, 18, 19, 20), mapeando frecuencias de acciones preventivas en el hogar y percepciones de riesgo.
+    *   Limpieza y normalización de dimensiones sociodemográficas: `Municipio`, `Unidad Educativa`, `Nivel del Hijo`, `Relación` (con el estudiante), `Edad`, `Género`, `Indígena`, `Idioma`, `Instrucción`, `Zona` y `Número de Hijos`.
+    *   Inclusión de visualizaciones intermedias, destacando el cruce entre la relación de cuidado y el género, así como la distribución por grado de instrucción y zona de residencia.
+    *   Configuración de exportación a la capa de oro en `output/df_padres_final.xlsx`.
