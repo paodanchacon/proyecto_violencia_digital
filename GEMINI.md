@@ -1,4 +1,5 @@
 Estas son las reglas:
+
 - Siempre responde en español
 - Cada vez que hagamos un cambio en el código, preguntame si quiero sincronizarlo. Si respondo que si, crea un commit y pushea en la rama principal.
 - UV esta instalado en este sistema, para cualquier operacion con python usar "uv"
