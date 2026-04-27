@@ -28,3 +28,11 @@
     *   Limpieza y normalización de dimensiones sociodemográficas: `Municipio`, `Unidad Educativa`, `Nivel del Hijo`, `Relación` (con el estudiante), `Edad`, `Género`, `Indígena`, `Idioma`, `Instrucción`, `Zona` y `Número de Hijos`.
     *   Inclusión de visualizaciones intermedias, destacando el cruce entre la relación de cuidado y el género, así como la distribución por grado de instrucción y zona de residencia.
     *   Configuración de exportación a la capa de oro en `output/df_padres_final.xlsx`.
+
+*   **Planificación del Dashboard:**
+    *   Creación del documento `PLAN_POWERBI.md` detallando la estrategia en Power BI: Modelado de datos (uso directo de la Capa de Oro), arquitectura de navegación web, UI/UX, y definición de visualizaciones cruzando métricas de conocimiento/prevención con las dimensiones demográficas rescatadas para las tres poblaciones.
+
+*   **Normalización de Índices (0 a 100):**
+    *   Se actualizó el código en Python para los tres notebooks (`Analisis_Estudiantes.ipynb`, `Analisis_Docentes.ipynb`, `Analisis_Padres.ipynb`).
+    *   Se añadieron las columnas normalizadas de Conocimiento y Prevención/Capacidades dividiendo sobre el máximo valor teórico y multiplicando por 100.
+    *   Se volvieron a ejecutar los notebooks exportando los archivos finales a Excel con estas nuevas métricas, asegurando que el dashboard las lea uniformemente de 0 a 100.
